@@ -38,7 +38,7 @@ public class RippleBackground extends RelativeLayout{
     private AnimatorSet animatorSet;
     private ArrayList<Animator> animatorList;
     private LayoutParams rippleParams;
-    private ArrayList<RippleView> rippleViewList=new ArrayList<RippleView>();
+    private ArrayList<RippleView> rippleViewList= new ArrayList<>();
 
     public RippleBackground(Context context) {
         super(context);
@@ -88,7 +88,7 @@ public class RippleBackground extends RelativeLayout{
 
         animatorSet = new AnimatorSet();
         animatorSet.setInterpolator(new AccelerateDecelerateInterpolator());
-        animatorList=new ArrayList<Animator>();
+        animatorList= new ArrayList<>();
 
         for(int i=0;i<rippleAmount;i++){
             RippleView rippleView=new RippleView(getContext());
